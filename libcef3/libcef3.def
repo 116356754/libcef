@@ -1,0 +1,8 @@
+;libcef3.def
+;该文件定义了DLL要导出的函数接口名
+
+LIBRARY        "LibCEF3"
+EXPORTS
+    ;CreateInterfaceModule @1
+	;Init                             
+	;CreateBrowser                                  

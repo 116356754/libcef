@@ -1,0 +1,116 @@
+﻿Build started 2016/6/23 11:48:32.
+     1>Project "E:\nwjs\libcef3\libcef3\libcef3.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\libcef3.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\libcef3.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CefFacade.cpp ClientApp.cpp ClientHandler.cpp ClientV8ExtensionHandler.cpp
+         CefFacade.cpp
+     1>CefFacade.cpp(56): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(544) : see declaration of '_swprintf'
+     1>CefFacade.cpp(139): warning C4996: '_swprintf': This function or variable may be unsafe. Consider using _swprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(544) : see declaration of '_swprintf'
+         ClientApp.cpp
+         ClientHandler.cpp
+     1>ClientHandler.cpp(87): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>ClientHandler.cpp(96): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         ClientV8ExtensionHandler.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\nwjs\libcef3\Release\libcef3.dll" /NOLOGO ..\Release\libcef_dll_wrapper.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"libcef3.def" /MANIFEST /ManifestFile:"Release\libcef3.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\nwjs\libcef3\Release\libcef3.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\nwjs\libcef3\Release\libcef3.lib" /MACHINE:X86 /DLL Release\CefFacade.obj
+         Release\ClientApp.obj
+         Release\ClientHandler.obj
+         Release\ClientV8ExtensionHandler.obj
+            Creating library E:\nwjs\libcef3\Release\libcef3.lib and object E:\nwjs\libcef3\Release\libcef3.exp
+         Generating code
+         Finished generating code
+     1>libcef_dll_wrapper.lib(cef_logging.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(cef_logging.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(transfer_util.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(transfer_util.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(libcef_dll_wrapper.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(libcef_dll_wrapper.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(allow_certificate_error_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(allow_certificate_error_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(app_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(app_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(auth_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(auth_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(before_download_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(before_download_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(binary_value_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(binary_value_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(browser_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(browser_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(browser_host_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(browser_host_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(browser_process_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(browser_process_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(client_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(client_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(command_line_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(command_line_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(completion_callback_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(completion_callback_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(context_menu_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(context_menu_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(context_menu_params_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(context_menu_params_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(domdocument_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(domdocument_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(domnode_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(domnode_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(domvisitor_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(domvisitor_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(dialog_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(dialog_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(dictionary_value_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(dictionary_value_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(display_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(display_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(download_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(download_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(download_item_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(download_item_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(download_item_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(download_item_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(drag_data_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(drag_data_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(drag_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(drag_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(end_tracing_callback_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(end_tracing_callback_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(file_dialog_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(file_dialog_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(focus_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(focus_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(frame_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(frame_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(geolocation_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(geolocation_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(geolocation_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(geolocation_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(get_geolocation_callback_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(get_geolocation_callback_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(jsdialog_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(jsdialog_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(jsdialog_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(jsdialog_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(keyboard_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(keyboard_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(life_span_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(life_span_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(list_value_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(list_value_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(load_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(load_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(menu_model_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(menu_model_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(navigation_entry_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(navigation_entry_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(navigation_entry_visitor_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(navigation_entry_visitor_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(post_data_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(post_data_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(post_data_element_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(post_data_element_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(print_dialog_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(print_dialog_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(print_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(print_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(print_job_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(print_job_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(print_settings_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(print_settings_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(process_message_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(process_message_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(quota_callback_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(quota_callback_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(render_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(render_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(render_process_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(render_process_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(request_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(request_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(request_context_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(request_context_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(request_context_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(request_context_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(request_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(request_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(resource_bundle_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(resource_bundle_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(resource_handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(resource_handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(response_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(response_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(run_file_dialog_callback_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(run_file_dialog_callback_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(scheme_handler_factory_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(scheme_handler_factory_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(scheme_registrar_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(scheme_registrar_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(string_visitor_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(string_visitor_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(task_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(task_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(task_runner_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(task_runner_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(v8accessor_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(v8accessor_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(v8context_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(v8context_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(v8exception_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(v8exception_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(v8handler_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(v8handler_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(v8stack_frame_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(v8stack_frame_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(v8stack_trace_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(v8stack_trace_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(v8value_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(v8value_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(web_plugin_info_ctocpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(web_plugin_info_ctocpp.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(web_plugin_info_visitor_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(web_plugin_info_visitor_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+     1>libcef_dll_wrapper.lib(web_plugin_unstable_callback_cpptoc.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'libcef_dll_wrapper.lib(web_plugin_unstable_callback_cpptoc.obj)' or at 'E:\nwjs\libcef3\Release\vc100.pdb'; linking object as if no debug info
+         libcef3.vcxproj -> E:\nwjs\libcef3\Release\libcef3.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\nwjs\libcef3\Release\libcef3.dll;#2" /manifest Release\libcef3.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\libcef3.unsuccessfulbuild".
+         Touching "Release\libcef3.lastbuildstate".
+     1>Done Building Project "E:\nwjs\libcef3\libcef3\libcef3.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.56
