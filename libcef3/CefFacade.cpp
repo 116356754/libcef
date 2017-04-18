@@ -119,7 +119,7 @@ void CefFacade::OnSize( const RECT newrc )
 
 extern "C"
 {
-	__declspec(dllexport) void Init(HINSTANCE hInstance,bool bSingleProcess =true)
+	 void __stdcall  Init(HINSTANCE hInstance,bool bSingleProcess =true)
 	{
 		CefMainArgs main_args(hInstance);  
 
@@ -151,7 +151,7 @@ typedef void(*Fun)(int); //定义函数指针类型
 static CefRefPtr<ClientHandler> s_clientHandler;
 extern "C"
 {
-	__declspec(dllexport) void  CreateBrowser(HWND Parent_,const char* startUrl_,Fun stateFn_)
+	 void __stdcall CreateBrowser(HWND Parent_,const char* startUrl_,Fun stateFn_)
 	{
 		s_clientHandler = new ClientHandler(stateFn_); 
 
@@ -172,7 +172,7 @@ extern "C"
 
 extern "C"
 {
-	__declspec(dllexport) void LoadUrl( const char* url_/*=NULL */ )
+	void __stdcall LoadUrl( const char* url_/*=NULL */ )
 	{
 		if(strlen(url_)==0)	
 			return;
@@ -185,7 +185,7 @@ extern "C"
 
 extern "C"
 {
-	__declspec(dllexport) void OnSize( const RECT newrc )
+	 void __stdcall OnSize( const RECT newrc )
 	{
 		if(s_clientHandler.get())
 		{
@@ -201,7 +201,7 @@ extern "C"
 
 extern "C"
 {
-	__declspec(dllexport) void ShutDown()
+	 void __stdcall ShutDown()
 	{
 		CefShutdown();
 	}

@@ -72,17 +72,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CefFacade.h" />
     <ClInclude Include="ClientApp.h" />
     <ClInclude Include="ClientHandler.h" />
     <ClInclude Include="ClientV8ExtensionHandler.h" />
     <ClInclude Include="ModuleInterface.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CefFacade.cpp" />
     <ClCompile Include="ClientApp.cpp" />
     <ClCompile Include="ClientHandler.cpp" />
     <ClCompile Include="ClientV8ExtensionHandler.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libcef3.def" />

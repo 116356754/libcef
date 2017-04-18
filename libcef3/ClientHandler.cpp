@@ -26,9 +26,7 @@
     #include "include/cef_runnable.h"  
     #include "include/cef_web_plugin.h"  
       
-	#include <tchar.h>
-
-	
+	#include <tchar.h>	
 
     ClientHandler::ClientHandler(pFun pFn_)
     {  
@@ -73,7 +71,6 @@
 
 		OutputDebugString(_T("OnLoadStart \n"));
 		start = GetTickCount();  
-
 	}
 
 	void ClientHandler::OnLoadEnd( CefRefPtr<CefBrowser> browser, CefRefPtr<CefFrame> frame, int httpStatusCode )

@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CefFacade.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="ClientApp.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -32,9 +29,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CefFacade.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ClientApp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -42,6 +36,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ClientV8ExtensionHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
